@@ -5,17 +5,29 @@
 
 
  <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
+  <button class="dropbtn">Valves</button>
+  <div class="dropdownContent">
+  <a href="#">Ball</a>
+  <a href="#">Butterfly</a>
+  <a href="#">Check</a>
   </div>
 </div>
 
+<br>
 
- <btn>Elobow</btn><br>
- <btn>Reducer</btn><br>
+<div class="dropdown">
+  <button class="dropbtn">Elbow</button>
+  <div class="dropdownContent">
+  <a href="#">Ball</a>
+  <a href="#">Butterfly</a>
+  <a href="#">Check</a>
+  </div>
+</div>
+
+<br>
+
+
+
 
 </TabMain>
 
@@ -51,6 +63,7 @@ import TabMain from './components/TabMain.vue'
 
 
 </script>
+
 
 
 <style>
@@ -92,7 +105,7 @@ btn:hover {
 
 
   /* Style The Dropdown Button */
-dropbtn {
+.dropbtn {
   background-color: #209323;
   color: white;
   padding: 16px;
@@ -102,13 +115,13 @@ dropbtn {
 }
 
 /* The container <div> - needed to position the dropdown content */
-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-dropdown-content {
+.dropdownContent {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -118,7 +131,7 @@ dropdown-content {
 }
 
 /* Links inside the dropdown */
-dropdown-content a {
+.dropdownContent a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -126,15 +139,15 @@ dropdown-content a {
 }
 
 /* Change color of dropdown links on hover */
-dropdown-content a:hover {background-color: #f1f1f1}
+.dropdownContent a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu on hover */
-dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
 
